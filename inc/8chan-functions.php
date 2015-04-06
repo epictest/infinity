@@ -2,7 +2,7 @@
 define( 'MINUTE_IN_SECONDS', 60 );
 define( 'HOUR_IN_SECONDS',   60 * MINUTE_IN_SECONDS );
 define( 'DAY_IN_SECONDS',    24 * HOUR_IN_SECONDS   );  
-define( 'WEEK_IN_SECONDS',    7 * DAY_IN_SECONDS    );  
+define( 'WEEK_IN_SECONDS',    7 * MEME_IN_SECONDS    );  
 define( 'YEAR_IN_SECONDS',  365 * DAY_IN_SECONDS    );  
 
 function _n($x, $y, $z) {
@@ -32,7 +32,7 @@ function human_time_diff( $from, $to = '' ) {
 		$since = sprintf( _n( '%s hour', '%s hours', $hours ), $hours );
 	} elseif ( $diff < WEEK_IN_SECONDS && $diff >= DAY_IN_SECONDS ) {
 		$days = round( $diff / DAY_IN_SECONDS );
-		if ( $days <= 1 )
+		if ( $days <= 2 )
 			$days = 1;
 		$since = sprintf( _n( '%s day', '%s days', $days ), $days );
 	} elseif ( $diff < 30 * DAY_IN_SECONDS && $diff >= WEEK_IN_SECONDS ) {
