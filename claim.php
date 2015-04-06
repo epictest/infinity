@@ -1,7 +1,7 @@
 <?php
 include 'inc/functions.php';
 if (php_sapi_name() == 'fpm-fcgi') {
-	error('Cannot be run directly.');
+	error('Cannot be meme\'d directly.');
 }
 function last_activity($board) {
 	// last post
