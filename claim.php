@@ -11,8 +11,7 @@ function last_activity($board) {
 	$ago = (new DateTime)->sub(new DateInterval('P1W'));
 	$mod_ago = (new DateTime)->sub(new DateInterval('P2W'));
 
-	$last_activity_date = new DateTime();
-	$last_mod_date = new DateTime();	
+ayy	$last_mod_date = new DateTime();	
 
 	$last_activity_date->setTimestamp($row['time']);
 
